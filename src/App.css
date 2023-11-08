@@ -75,9 +75,11 @@
 .logo-text{
   color: #fff;
   margin-top: -4px;
+  font-family: cursive;
 }
 ul li{
   font-size: 13px;
+  font-family: cursive;
   list-style-type: none;
   background-color: #031231;
   width: 70%;
@@ -99,9 +101,15 @@ ul li a .etc{
   padding: auto;
   border-radius: 50%;
 }
+ul li a .icon{
+  padding: 0 6px;
+}
 
 /* Media query */
 @media (max-width:800px) {
+  .App{
+    height: 1000px;
+  }
   .hidden{
     padding: 2px 0;
     background-color: #a8c2ee;
@@ -114,9 +122,20 @@ ul li a .etc{
     font-size: 13px;
     list-style-type: none;
     background-color: #031231;
-    width: 70%;
+    width: 85%;
     height: 2.5rem;
-    margin: 30px auto;
+    margin: 30px 20px;
+    border-radius: 40px;
+  }
+}
+@media (max-width:450px) {
+  ul li{
+    font-size: 13px;
+    list-style-type: none;
+    background-color: #031231;
+    width: 85%;
+    height: 2.5rem;
+    margin: 30px 13px;
     border-radius: 40px;
   }
 }
@@ -127,7 +146,7 @@ ul li a .etc{
     background-color: #031231;
     width: 70%;
     height: 2.5rem;
-    margin: 10px auto;
+    margin: 10px 20px;
     border-radius: 40px;
   }
 }
