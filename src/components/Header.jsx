@@ -1,6 +1,6 @@
 import React from 'react';
-import { useState } from 'react'
-import { BsThreeDots } from 'react-icons/bs'
+import { useState } from 'react';
+import { BsThreeDots } from 'react-icons/bs';
 
 const Header = (prop) => {
   const [ toggle, setToggle ] = useState(false)
