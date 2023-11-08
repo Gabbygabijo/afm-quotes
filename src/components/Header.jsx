@@ -1,6 +1,7 @@
 import React from 'react';
-import { useState } from 'react'
-import { BsThreeDots } from 'react-icons/bs'
+import { useState } from 'react';
+import { BsThreeDots } from 'react-icons/bs';
+import mainLogo from '../imgs/AFM_main.jpg'
 
 const Header = (prop) => {
   const [ toggle, setToggle ] = useState(false)
@@ -15,18 +16,18 @@ const Header = (prop) => {
         </div>
       </div>
       <div onClick={handleBounce} className={`${toggle ? 'hidden' : 'hid'}`}>
-        <a href="#main" target='blank'>
+        <a href='#main'>
           <img src={prop.logo} alt="" />
         </a>
         <a href="#main">
           <BsThreeDots />
         </a>
       </div>
-      <img src={prop.logo} alt="" />
-      <p className='logo-text'>AFM</p>
+      <img src={mainLogo} alt="" />
       <div className="main">
-        <p>Quoats & Write ups</p>
+        <p>Quotes & Write ups</p>
         <h2>-opera_mills</h2>
+        <p className='logo-text'>A short saying often containas much Wisdom.</p>
       </div>
     </header>
   )

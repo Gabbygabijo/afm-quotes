@@ -2,7 +2,8 @@
   text-align: center;
   background-image: linear-gradient(180deg, #325388 0%, #031231 100%);
   color: #fff;
-  height: 100vh;
+  height: max-content;
+  margin-bottom: -30px;
 }
 
 .App-header {
@@ -34,16 +35,7 @@
   justify-content: space-between;
   border-radius: 50px 50px;
 }
-@media (max-width:800px) {
-  .hidden{
-    padding: 2px 0;
-    background-color: #a8c2ee;
-    width: 80vw;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 50px 50px;
-  }
-}
+
 .hidden > a > img{
   width: 15px;
   height: 15px;
@@ -83,4 +75,78 @@
 .logo-text{
   color: #fff;
   margin-top: -4px;
+  font-family: cursive;
+}
+ul li{
+  font-size: 13px;
+  font-family: cursive;
+  list-style-type: none;
+  background-color: #031231;
+  width: 70%;
+  height: 2.5rem;
+  margin: 10px auto;
+  border-radius: 40px;
+}
+.list{
+  padding-bottom: 50px;
+}
+ul li a{
+  text-decoration: none;
+  color: #a8c2ee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ul li a .etc{
+  padding: auto;
+  border-radius: 50%;
+}
+ul li a .icon{
+  padding: 0 6px;
+}
+
+/* Media query */
+@media (max-width:800px) {
+  .App{
+    height: 1000px;
+  }
+  .hidden{
+    padding: 2px 0;
+    background-color: #a8c2ee;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px 50px;
+  }
+  ul li{
+    font-size: 13px;
+    list-style-type: none;
+    background-color: #031231;
+    width: 85%;
+    height: 2.5rem;
+    margin: 30px 20px;
+    border-radius: 40px;
+  }
+}
+@media (max-width:450px) {
+  ul li{
+    font-size: 13px;
+    list-style-type: none;
+    background-color: #031231;
+    width: 85%;
+    height: 2.5rem;
+    margin: 30px 13px;
+    border-radius: 40px;
+  }
+}
+@media (max-width:310px) {
+  ul li{
+    font-size: 10px;
+    list-style-type: none;
+    background-color: #031231;
+    width: 70%;
+    height: 2.5rem;
+    margin: 10px 20px;
+    border-radius: 40px;
+  }
 }
