@@ -25,9 +25,8 @@ const Header = (prop) => {
       </div>
       <img src={mainLogo} alt="" />
       <div className="main">
-        <p>Quotes & Write ups</p>
-        <h2>-opera_mills</h2>
-        <p className='logo-text'>A short saying often containas much Wisdom.</p>
+        <h2>@afm_quotes</h2>
+        <p className='logo-text'>A short saying often contains much Wisdom.</p>
       </div>
     </header>
   )

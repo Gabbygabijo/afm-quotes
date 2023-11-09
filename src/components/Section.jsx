@@ -5,7 +5,7 @@ import { BsTiktok } from 'react-icons/bs';
 import { RiTwitterXFill } from 'react-icons/ri';
 import { BsFacebook } from 'react-icons/bs';
 import { BsSnapchat } from 'react-icons/bs';
-import { BsWhatsapp } from 'react-icons/bs'
+import { BsWhatsapp } from 'react-icons/bs';
 
 const Section = () => {
   const items = [
@@ -17,6 +17,13 @@ const Section = () => {
       link : `https://instagram.com/afmquotes`
     },
     {
+      id : 3,
+      icon : <RiTwitterXFill />,
+      text : 'You can follow us on X',
+      etc : <BsThreeDots />,
+      link : `https://www.x.com/@AfmQuotes`
+    },
+    {
       id : 2,
       icon : <BsTiktok />,
       text : 'You can follow us on TikTok',
@@ -24,11 +31,11 @@ const Section = () => {
       link : 'https://www.tiktok.com/@afm_quotes'
     },
     {
-      id : 3,
-      icon : <RiTwitterXFill />,
-      text : 'You can follow us on X',
+      id : 6,
+      icon : <BsWhatsapp />,
+      text : 'Message us on whatsapp',
       etc : <BsThreeDots />,
-      link : `https://www.x.com/@AfmQuotes`
+      link : `http://wa.me/+2348165806427/`
     },
     {
       id : 4,
@@ -43,13 +50,6 @@ const Section = () => {
       text : 'Add us on snapchat',
       etc : <BsThreeDots />,
       link : `https://t.snapchat.com/IhExlx26`
-    },
-    {
-      id : 6,
-      icon : <BsWhatsapp />,
-      text : 'Message us on whatsapp',
-      etc : <BsThreeDots />,
-      link : `http://wa.me/+2348165806427/`
     }
     
   ]
@@ -63,7 +63,7 @@ const Section = () => {
               <p className='icon'>
               {item.icon}
               </p>
-              <p>{item.text}</p>
+              <p className='text-t'>{item.text}</p>
               <p className='etc icon'>{item.etc} </p>
             </a>
           </li>
