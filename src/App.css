@@ -1,9 +1,13 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-image: linear-gradient(180deg, #325388 0%, #031231 100%);
+}
 .App {
   text-align: center;
-  background-image: linear-gradient(180deg, #325388 0%, #031231 100%);
   color: #fff;
   height: max-content;
-  margin-bottom: -30px;
 }
 
 .App-header {
@@ -18,13 +22,13 @@
 
 .App-header > img{
   margin-top: 9px;
-  height: 80px;
-  width: 80px;
+  height: 120px;
+  width: 120px;
   border-radius: 50%;
 }
 .main > h2{
-  margin-top: -15px;
-  font-size: 20px;
+  margin-top: -5px;
+  font-size: 30px;
 }
 
 .hidden{
@@ -104,11 +108,17 @@ ul li a .etc{
 ul li a .icon{
   padding: 0 6px;
 }
+ul li a .text-t{
+  padding: 0 2px;
+}
 
 /* Media query */
 @media (max-width:800px) {
-  .App{
-    height: 1000px;
+  .App-header > img{
+    margin-top: 9px;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
   }
   .hidden{
     padding: 2px 0;
@@ -119,24 +129,31 @@ ul li a .icon{
     border-radius: 50px 50px;
   }
   ul li{
-    font-size: 13px;
+    font-size: 23px;
     list-style-type: none;
     background-color: #031231;
     width: 85%;
-    height: 2.5rem;
-    margin: 30px 20px;
+    height: 20vh;
+    margin: 30px 30px;
     border-radius: 40px;
+  }
+  ul li a .icon{
+    padding: 0 6px;
+    font-size: 30px;
   }
 }
 @media (max-width:450px) {
   ul li{
-    font-size: 13px;
+    font-size: 23px;
     list-style-type: none;
     background-color: #031231;
     width: 85%;
-    height: 2.5rem;
+    height: 7.5rem;
     margin: 30px 13px;
     border-radius: 40px;
+  }
+  ul li a .icon{
+    padding: 10px 6px;
   }
 }
 @media (max-width:310px) {
@@ -145,8 +162,20 @@ ul li a .icon{
     list-style-type: none;
     background-color: #031231;
     width: 70%;
-    height: 2.5rem;
-    margin: 10px 20px;
+    height: 3rem;
+    margin: 10px 25px;
     border-radius: 40px;
+  }
+  ul li a .icon{
+    padding: 10px 6px;
+    font-size: 10px;
+  }
+  .App-header > img{
+    height: 100px;
+    width: 100px;
+  }
+  .main > h2{
+    margin-top: -5px;
+    font-size:25px;
   }
 }
