@@ -12,7 +12,7 @@ const Header = (prop) => {
     <header className="App-header" onScroll={handleBounce}>
       <div className={`${toggle ? 'minn' : 'min'}`}>
         <div className='smt' onClick={handleBounce}>
-          <BsThreeDots />
+          <BsThreeDots className='dots' />
         </div>
       </div>
       <div onClick={handleBounce} className={`${toggle ? 'hidden' : 'hid'}`}>
@@ -20,7 +20,7 @@ const Header = (prop) => {
           <img src={prop.logo} alt="" />
         </a>
         <a href="#main">
-          <BsThreeDots />
+          <BsThreeDots classname='dots'/>
         </a>
       </div>
       <img src={mainLogo} alt="" />
