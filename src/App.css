@@ -140,7 +140,7 @@ ul li a .text-t{
     width: 85%;
     height: 5.5rem;
     margin: 30px 30px;
-    border-radius: 40px;
+    border-radius: 10px 40px 10px 40px;
   }
   ul li a .icon{
     padding: 0 6px;
@@ -156,7 +156,7 @@ ul li a .text-t{
     width: 85%;
     height: 4.5rem;
     margin: 30px 13px;
-    border-radius: 40px;
+    border-radius: 10px 30px 10px 30px;
   }
   ul li a .icon{
     padding: 0 6px;
@@ -171,7 +171,6 @@ ul li a .text-t{
     width: 70%;
     height: 3rem;
     margin: 15px 25px;
-    border-radius: 40px;
   }
   ul li a .icon{
     padding: 10px 6px;
